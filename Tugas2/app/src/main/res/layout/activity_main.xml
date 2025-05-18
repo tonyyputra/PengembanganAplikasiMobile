@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka Pertama"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angka Kedua"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
